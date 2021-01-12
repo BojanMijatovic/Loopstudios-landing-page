@@ -1,4 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 html {
-  background-color: red; }
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 62.5%; }
+
+ul {
+  list-style: none; }
+
+.header .nav {
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  position: relative; }
+  .header .nav .logo .__img {
+    width: 75%;
+    height: 50%;
+    margin: 3rem 0 0 1rem; }
+  .header .nav .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: green;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    top: 0;
+    left: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease; }
+    .header .nav .links .__link .__item {
+      color: red;
+      font-weight: 500;
+      font-size: 2rem;
+      text-decoration: underline; }
+  .header .nav .burger-btn {
+    margin: 3rem 1rem 0 0;
+    position: relative;
+    z-index: 20; }
+    .header .nav .burger-btn span {
+      padding: 0.2rem 1.4rem;
+      background-color: white;
+      margin: 0.4rem 0;
+      display: block;
+      transition: all ease 0.5s; }
+  .header .nav .nav-open {
+    transform: translateX(-100%); }
+  .header .nav .toggle .line1 {
+    transform: rotateZ(45deg) translateY(280%);
+    background: whitesmoke; }
+  .header .nav .toggle .line2 {
+    opacity: 0; }
+  .header .nav .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: whitesmoke; }
 
 /*# sourceMappingURL=main.css.map */
