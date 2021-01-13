@@ -150,4 +150,40 @@ ul {
     font-family: "Alata", sans-serif;
     letter-spacing: 3px; }
 
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer .--items {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .--items .__logo {
+      margin: 6rem 0 2rem; }
+    .footer .--items .--links {
+      margin: 2rem 0;
+      text-align: center; }
+      .footer .--items .--links .__item {
+        margin: 1.5rem; }
+        .footer .--items .--links .__item a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.5rem;
+          text-transform: uppercase; }
+  .footer .--media {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .footer .--media .--icons {
+      display: flex;
+      align-items: center;
+      margin: 1.5rem; }
+      .footer .--media .--icons .__icon {
+        margin: 1rem; }
+    .footer .--media .--text {
+      font-size: 1.2rem;
+      padding: 1rem; }
+
 /*# sourceMappingURL=main.css.map */
