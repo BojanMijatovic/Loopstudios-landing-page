@@ -1,22 +1,22 @@
 .header {
+    background-image: url('../../images/mobile/image-hero.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
     // nav
     .nav {
-        background-image: url('../../images/mobile/image-hero.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 85vh;
-        width: 100vw;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         margin: 0 auto;
         position: relative;
+        width: 90%;
         // logo
         .logo {
             .__img {
-                width: 75%;
-                height: 50%;
                 margin: 3rem 0 0 1rem;
             }
         }
@@ -36,7 +36,7 @@
             overflow: hidden;
             transition: transform 0.5s ease;
             //  single link
-            .__link {
+            .--link {
                 //  item
                 .__item {
                     color: red;
@@ -75,6 +75,23 @@
         .toggle .line3 {
             transform: rotateZ(-45deg) translateY(-300%);
             background: whitesmoke;
+        }
+    }
+    // hero title
+    .hero {
+        position: absolute;
+        left: 0%;
+        bottom: 35%;
+        border: 1px solid $white;
+        margin: 3rem;
+        // title
+        .--title {
+            color: $white;
+            font-size: 3rem;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 1.1;
         }
     }
 }
