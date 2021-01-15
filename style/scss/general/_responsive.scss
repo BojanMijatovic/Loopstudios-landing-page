@@ -169,4 +169,38 @@
             text-align: center;
         }
     }
+    // footer
+    .footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .--items {
+            margin-left: 9rem;
+            align-items: flex-start;
+            // logo
+            .__logo {
+                margin-top: 6rem;
+            }
+            .--links {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .__item {
+                    a {
+                        font-size: 1.4rem;
+                        margin: 0 0 2rem -2rem;
+                    }
+                }
+            }
+        }
+        //  media
+        .--media {
+            .--icons {
+                margin: 0 0 6rem 8rem;
+            }
+            .--text {
+                margin-right: 7rem;
+            }
+        }
+    }
 }

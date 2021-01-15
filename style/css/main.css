@@ -310,6 +310,27 @@ ul {
       right: 100%;
       bottom: 5%;
       width: 80%;
-      text-align: center; } }
+      text-align: center; }
+
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .footer .--items {
+      margin-left: 9rem;
+      align-items: flex-start; }
+      .footer .--items .__logo {
+        margin-top: 6rem; }
+      .footer .--items .--links {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .footer .--items .--links .__item a {
+          font-size: 1.4rem;
+          margin: 0 0 2rem -2rem; }
+    .footer .--media .--icons {
+      margin: 0 0 6rem 8rem; }
+    .footer .--media .--text {
+      margin-right: 7rem; } }
 
 /*# sourceMappingURL=main.css.map */
