@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+ul {
+    list-style: none;
+}
+
+//  media
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 1200px and up) */
+
+@mixin media-large {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@mixin media-extra-lg {
+    @media only screen and(min-width: 1440px) {
+        @content;
+    }
+}

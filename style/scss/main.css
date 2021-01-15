@@ -13,7 +13,7 @@ ul {
   list-style: none; }
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 1200px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .header {
   background-image: url("../../images/mobile/image-hero.jpg");
@@ -209,107 +209,6 @@ ul {
   .header .nav .nav-open {
     align-items: center; }
   .header .hero .--title {
-    padding: 2rem;
-    font-size: 3.5rem; }
-
-  #leader .info .subtitle {
-    font-size: 1.6rem; }
-
-  .footer .--items .--links .__item a {
-    font-size: 1.8rem; }
-  .footer .--media .--text {
-    font-size: 1.6rem; } }
-@media only screen and (min-width: 1200px) {
-  .header {
-    width: 100%;
-    height: 80vh;
-    background-position: bottom center; }
-    .header .nav {
-      margin: 0 auto;
-      width: 85%; }
-      .header .nav .logo {
-        margin: 3rem 0; }
-        .header .nav .logo .__img {
-          margin: 0; }
-      .header .nav .links {
-        flex-direction: row;
-        background-color: transparent;
-        position: static;
-        margin: 4.2rem 0;
-        width: 40%; }
-        .header .nav .links .--link .__item {
-          margin: 0;
-          font-size: 1.6rem; }
-      .header .nav .burger-btn {
-        display: none; }
-    .header .hero {
-      margin: 0;
-      left: 8%;
-      bottom: 30%;
-      width: 45%; }
-      .header .hero .--title {
-        padding: 3rem 5rem;
-        font-size: 4.5rem; }
-
-  #leader {
-    margin-top: 8rem;
-    width: 85%;
-    flex-direction: row;
-    position: relative; }
-    #leader .--photo {
-      width: 75%;
-      height: 60vh; }
-      #leader .--photo .__img {
-        width: 100%;
-        height: 100%; }
-    #leader .info {
-      position: absolute;
-      margin: 0;
-      z-index: 10;
-      bottom: -1%;
-      right: -5%;
-      width: 50%;
-      height: 60%;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 2rem; }
-      #leader .info .--title {
-        margin-top: 7rem;
-        font-size: 4rem;
-        color: dimgray; }
-
-  #creation {
-    margin-top: 8rem;
-    margin-bottom: 10rem;
-    width: 85%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-columns: repeat(2, 1fr); }
-    #creation .--title {
-      order: 1;
-      margin: 0;
-      font-size: 4.5rem; }
-    #creation .--list {
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
-      order: 3; }
-      #creation .--list .__item {
-        height: 35vh;
-        width: 20vw;
-        margin: 0; }
-        #creation .--list .__item img {
-          width: 100%;
-          height: 100%; }
-    #creation .btn {
-      order: 2;
-      position: relative;
-      right: 100%;
-      bottom: 5%;
-      width: 80%;
-      text-align: center; } }
+    font-size: 4rem; } }
 
 /*# sourceMappingURL=main.css.map */
