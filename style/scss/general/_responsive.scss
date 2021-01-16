@@ -19,7 +19,7 @@
     #leader {
         .info {
             // subtitle
-            .subtitle {
+            .--subtitle {
                 font-size: 1.6rem;
             }
         }
@@ -245,7 +245,7 @@
         }
         // info
         .info {
-            .subtitle {
+            .--subtitle {
                 margin-top: 3rem;
             }
         }

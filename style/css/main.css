@@ -118,7 +118,7 @@ ul {
       text-transform: uppercase;
       font-weight: 500;
       margin-bottom: 2rem; }
-    #leader .info .subtitle {
+    #leader .info .--subtitle {
       font-size: 1.4rem;
       color: dimgray;
       text-align: center;
@@ -215,7 +215,7 @@ ul {
     padding: 2rem;
     font-size: 3.5rem; }
 
-  #leader .info .subtitle {
+  #leader .info .--subtitle {
     font-size: 1.6rem; }
 
   .footer .--items .--links .__item a {
@@ -359,7 +359,7 @@ ul {
     width: 70%; }
     #leader .--photo .__img {
       width: 90%; }
-  #leader .info .subtitle {
+  #leader .info .--subtitle {
     margin-top: 3rem; }
 
   .footer .--items {
