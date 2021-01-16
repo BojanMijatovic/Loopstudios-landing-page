@@ -4,6 +4,8 @@
         .nav {
             .nav-open {
                 align-items: center;
+                transform: none;
+                justify-content: space-around;
             }
         }
         .hero {
@@ -64,13 +66,21 @@
                 flex-direction: row;
                 background-color: transparent;
                 position: static;
-                margin: 4.2rem 0;
+                margin: 4.2rem 0 1rem;
                 width: 40%;
                 //  single link
                 .--link {
+                    margin-bottom: 1rem;
                     .__item {
                         margin: 0;
                         font-size: 1.6rem;
+                        border: 1px solid transparent;
+                        transition: 0.3s;
+                        padding-bottom: 0.5rem;
+                        &:active,
+                        &:hover {
+                            border-bottom: 1px solid $white;
+                        }
                     }
                 }
             }
@@ -153,10 +163,6 @@
                 height: 35vh;
                 width: 20vw;
                 margin: 0;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
             }
         }
         // btn
@@ -167,6 +173,12 @@
             bottom: 5%;
             width: 80%;
             text-align: center;
+            transition: 0.3s;
+            &:hover,
+            &:active {
+                background-color: $black;
+                color: $white;
+            }
         }
     }
     // footer
@@ -189,6 +201,13 @@
                     a {
                         font-size: 1.4rem;
                         margin: 0 0 2rem -2rem;
+                        border: 1px solid transparent;
+                        transition: 0.3s;
+                        padding-bottom: 0.5rem;
+                        &:hover,
+                        &:active {
+                            border-bottom: 1px solid $white;
+                        }
                     }
                 }
             }
@@ -197,10 +216,47 @@
         .--media {
             .--icons {
                 margin: 0 0 6rem 8rem;
+                .__icon {
+                    transition: 0.3s;
+                    border: 1px solid transparent;
+                    padding-bottom: 0.5rem;
+                    &:hover,
+                    &:active {
+                        border-bottom: 1px solid $white;
+                    }
+                }
             }
             .--text {
                 margin-right: 7rem;
             }
+        }
+    }
+}
+
+//  media-extra-lg
+@include media-extra-lg {
+    //  leader section
+    #leader {
+        .--photo {
+            width: 70%;
+            .__img {
+                width: 90%;
+            }
+        }
+        // info
+        .info {
+            .subtitle {
+                margin-top: 3rem;
+            }
+        }
+    }
+    //  footer
+    .footer {
+        .--items {
+            margin-left: 12rem;
+        }
+        .--media {
+            margin-right: 4rem;
         }
     }
 }
