@@ -308,7 +308,7 @@ ul {
       grid-gap: 2rem;
       order: 3; }
       #creation .--list .__item {
-        height: 35vh;
+        height: 25vh;
         width: 20vw;
         margin: 0; }
     #creation .btn {
@@ -355,6 +355,9 @@ ul {
     .footer .--media .--text {
       margin-right: 7rem; } }
 @media only screen and (min-width: 1440px) {
+  .header .hero .--title {
+    font-size: 6.5rem; }
+
   #leader .--photo {
     width: 70%; }
     #leader .--photo .__img {

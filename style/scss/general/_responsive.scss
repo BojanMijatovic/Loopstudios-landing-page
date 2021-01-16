@@ -160,7 +160,7 @@
             order: 3;
             //  single item
             .__item {
-                height: 35vh;
+                height: 25vh;
                 width: 20vw;
                 margin: 0;
             }
@@ -235,6 +235,14 @@
 
 //  media-extra-lg
 @include media-extra-lg {
+    //  header
+    .header {
+        .hero {
+            .--title {
+                font-size: 6.5rem;
+            }
+        }
+    }
     //  leader section
     #leader {
         .--photo {
