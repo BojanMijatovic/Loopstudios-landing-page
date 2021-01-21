@@ -24,20 +24,20 @@ ul {
   width: 100vw;
   height: 100vh;
   position: relative; }
-  .header .nav {
+  .header .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
     position: relative;
     width: 90%; }
-    .header .nav .logo .__img {
+    .header .header-nav .logo-wrapper .logo {
       margin: 3rem 0 0 1rem;
       z-index: 20;
       position: relative;
       top: 0;
       left: 0; }
-    .header .nav .links {
+    .header .header-nav .menu-items-list {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -51,7 +51,7 @@ ul {
       left: 100%;
       overflow: hidden;
       transition: transform 0.5s ease; }
-      .header .nav .links .--link .__item {
+      .header .header-nav .menu-items-list .menu-single-item .--item {
         color: white;
         font-weight: 500;
         font-size: 2.6rem;
@@ -62,28 +62,28 @@ ul {
         align-items: center;
         justify-content: center;
         margin: 2rem 0 0 3rem; }
-    .header .nav .burger-btn {
+    .header .header-nav .burger-button {
       margin: 3rem 1rem 0 0;
       position: relative;
       z-index: 20; }
-      .header .nav .burger-btn span {
+      .header .header-nav .burger-button span {
         padding: 0.2rem 1.4rem;
         background-color: white;
         margin: 0.4rem 0;
         display: block;
         transition: all ease 0.5s; }
-    .header .nav .nav-open {
+    .header .header-nav .nav-open {
       transform: translateX(-100%);
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center; }
-    .header .nav .toggle .line1 {
+    .header .header-nav .toggle .line1 {
       transform: rotateZ(45deg) translateY(280%);
       background: whitesmoke; }
-    .header .nav .toggle .line2 {
+    .header .header-nav .toggle .line2 {
       opacity: 0; }
-    .header .nav .toggle .line3 {
+    .header .header-nav .toggle .line3 {
       transform: rotateZ(-45deg) translateY(-300%);
       background: whitesmoke; }
   .header .hero {
@@ -92,7 +92,7 @@ ul {
     bottom: 35%;
     border: 1px solid white;
     margin: 3rem; }
-    .header .hero .--title {
+    .header .hero .hero-container .--title {
       color: white;
       font-size: 3rem;
       padding: 1rem;
@@ -100,25 +100,36 @@ ul {
       font-weight: 500;
       line-height: 1.1; }
 
-#leader {
+.hero-section .hero-container {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 10%; }
+  .hero-section .hero-container .hero-title {
+    color: white;
+    font-size: 3rem;
+    border: 1px solid white;
+    padding: 1rem 2rem; }
+
+.leader-section {
   width: 90%;
   display: flex;
   flex-direction: column;
   margin: 5rem auto 0;
   align-items: center; }
-  #leader .--photo .__img {
+  .leader-section .leader-container .main-photo .leader-photo {
     width: 100%;
     height: 100%; }
-  #leader .info {
+  .leader-section .leader-container .leader-info-text {
     margin-top: 3rem; }
-    #leader .info .--title {
+    .leader-section .leader-container .leader-info-text .info-text-title {
       font-size: 3rem;
       color: black;
       text-align: center;
       text-transform: uppercase;
       font-weight: 500;
       margin-bottom: 2rem; }
-    #leader .info .--subtitle {
+    .leader-section .leader-container .leader-info-text .info-text-subtitle {
       font-size: 1.4rem;
       color: dimgray;
       text-align: center;
@@ -126,29 +137,29 @@ ul {
       line-height: 1.7;
       font-family: "Alata", sans-serif; }
 
-#creation {
+.creation-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
   margin: 0 auto; }
-  #creation .--title {
+  .creation-section .--title {
     margin: 7rem 0 2rem;
     color: black;
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 500; }
-  #creation .--list {
+  .creation-section .--list {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    #creation .--list .__item {
+    .creation-section .--list .__item {
       position: relative;
       margin: 1rem 0; }
-      #creation .--list .__item img {
+      .creation-section .--list .__item img {
         width: 100%;
         height: 100%; }
-      #creation .--list .__item .__title {
+      .creation-section .--list .__item .__title {
         position: absolute;
         left: 5%;
         bottom: 10%;
@@ -157,7 +168,7 @@ ul {
         font-size: 2.5rem;
         font-weight: 500;
         text-transform: uppercase; }
-  #creation .btn {
+  .creation-section .btn {
     margin: 4rem;
     border: 1px solid black;
     padding: 1rem 3rem;

@@ -7,7 +7,7 @@
     height: 100vh;
     position: relative;
     // nav
-    .nav {
+    .header-nav {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -15,8 +15,8 @@
         position: relative;
         width: 90%;
         // logo
-        .logo {
-            .__img {
+        .logo-wrapper {
+            .logo {
                 margin: 3rem 0 0 1rem;
                 z-index: 20;
                 position: relative;
@@ -25,7 +25,7 @@
             }
         }
         // links
-        .links {
+        .menu-items-list {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -40,9 +40,9 @@
             overflow: hidden;
             transition: transform 0.5s ease;
             //  single link
-            .--link {
+            .menu-single-item {
                 //  item
-                .__item {
+                .--item {
                     color: $white;
                     font-weight: 500;
                     font-size: 2.6rem;
@@ -57,7 +57,7 @@
             }
         }
         // burger-menu
-        .burger-btn {
+        .burger-button {
             margin: 3rem 1rem 0 0;
             position: relative;
             z-index: 20;
@@ -98,14 +98,16 @@
         bottom: 35%;
         border: 1px solid $white;
         margin: 3rem;
-        // title
-        .--title {
-            color: $white;
-            font-size: 3rem;
-            padding: 1rem;
-            text-transform: uppercase;
-            font-weight: 500;
-            line-height: 1.1;
+        .hero-container {
+            // title
+            .--title {
+                color: $white;
+                font-size: 3rem;
+                padding: 1rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                line-height: 1.1;
+            }
         }
     }
 }
