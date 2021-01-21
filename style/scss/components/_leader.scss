@@ -1,11 +1,12 @@
 //  leader section
 .leader-section {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin: 5rem auto 0;
-    align-items: center;
+    margin-bottom: 8rem;
     .leader-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 5rem auto 0;
+        align-items: center;
         .main-photo {
             .leader-photo {
                 width: 100%;
