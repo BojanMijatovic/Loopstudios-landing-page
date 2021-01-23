@@ -1,16 +1,47 @@
 .hero-section {
     //hero-title
-    .hero-container {
+    .container {
         width: 70%;
         position: absolute;
         top: 50%;
         left: 10%;
+        // responsive
+        @include media-md {
+            width: 50%;
+            top: 35%;
+        }
+        // media-large
+        @include media-large {
+            width: 35%;
+            left: 5%;
+            top: 25%;
+        }
+        // media extra large
+        @include media-extra-lg {
+            width: 30%;
+            top: 40%;
+        }
         // title
         .hero-title {
             color: $white;
             font-size: 3rem;
             border: 1px solid $white;
             padding: 1rem 2rem;
+            // responsive
+            // media-md
+            @include media-md {
+                font-size: 6rem;
+                padding: 1rem;
+            }
+            // media-large
+            @include media-large {
+                padding: 2rem 4rem;
+            }
+            // media extra large
+            @include media-extra-lg {
+                font-size: 5.5rem;
+                padding: 2rem 6rem;
+            }
         }
     }
 }

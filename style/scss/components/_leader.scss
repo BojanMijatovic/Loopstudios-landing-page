@@ -1,13 +1,31 @@
 //  leader section
 .leader-section {
     margin-bottom: 8rem;
-    .leader-container {
+    .container {
         width: 90%;
         display: flex;
         flex-direction: column;
         margin: 5rem auto 0;
         align-items: center;
+        //  responsive
+        @include media-large {
+            position: relative;
+        }
+        // extra large
+        @include media-extra-lg {
+            width: 90%;
+        }
         .main-photo {
+            //  responsive
+            @include media-large {
+                position: relative;
+                top: 10%;
+                right: 22%;
+            }
+            // extra large
+            @include media-extra-lg {
+                width: 60%;
+            }
             .leader-photo {
                 width: 100%;
                 height: 100%;
@@ -16,6 +34,23 @@
         // info
         .leader-info-text {
             margin-top: 3rem;
+            //  responsive
+            @include media-large {
+                position: absolute;
+                width: 50%;
+                bottom: 0%;
+                right: 0%;
+                z-index: 2;
+                background-color: $white;
+            }
+            // extra large
+            @include media-extra-lg {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 50%;
+            }
             //  title
             .info-text-title {
                 font-size: 3rem;
@@ -24,17 +59,46 @@
                 text-transform: uppercase;
                 font-weight: 500;
                 margin-bottom: 2rem;
+                // responsive
+                // media-md
+                @include media-md {
+                    font-size: 4rem;
+                }
+                //   media-large
+                @include media-large {
+                    font-size: 3rem;
+                    margin: 2rem 0;
+                }
+                // extra large
+                @include media-extra-lg {
+                    margin-top: 6rem;
+                    font-size: 4rem;
+                }
             }
             // subtitle
             .info-text-subtitle {
-                font-size: 1.4rem;
+                font-size: 1.6rem;
                 color: $very-dark-gray;
                 text-align: center;
                 padding: 0 2.8rem;
                 line-height: 1.7;
                 font-family: $alata;
+                // responsive
+                @include media-md {
+                    font-size: 2rem;
+                }
+                //   media-large
+                @include media-large {
+                    font-size: 1.8rem;
+                    margin: 2rem 0;
+                    padding: 1rem 4rem;
+                }
+                // extra large
+                @include media-extra-lg {
+                    margin-top: 3rem;
+                    font-size: 2.2rem;
+                }
             }
         }
     }
-    //  photo
 }

@@ -5,11 +5,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    //  responsive
+    @include media-large {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     // items
     .footer-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
+        //  responsive
+        @include media-large {
+            margin-left: 7.5rem;
+            align-items: flex-start;
+        }
+        // extra large
+        @include media-extra-lg {
+            margin-left: 18rem;
+        }
         // logo
         .footer-wrapper-logo {
             margin: 6rem 0 2rem;
@@ -18,14 +32,30 @@
         .footer-wrapper-links {
             margin: 2rem 0;
             text-align: center;
+            //  responsive
+            @include media-large {
+                display: flex;
+                align-items: center;
+            }
             .footer-link-item {
                 margin: 1.5rem;
                 list-style: none;
+                //  responsive
+                @include media-large {
+                    margin: 0 1em 0 0;
+                }
                 a {
                     text-decoration: none;
                     color: $white;
                     font-size: 1.5rem;
                     text-transform: uppercase;
+                    // responsive
+                    @include media-md {
+                        font-size: 2rem;
+                    }
+                    @include media-large {
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
@@ -35,6 +65,9 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        @include media-large {
+            margin-top: 3rem;
+        }
         // icons
         .footer-media-list {
             display: flex;
@@ -43,13 +76,31 @@
             // single icon
             .__icon {
                 margin: 1rem;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 1px solid $white;
+                }
             }
         }
         // text
         .footer-text {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             padding: 1rem;
             color: $dark-gray;
+            // responsive
+            @include media-md {
+                font-size: 1.8rem;
+            }
+            // media large
+            @include media-large {
+                margin-right: 7.5rem;
+            }
+            // extra large
+            @include media-extra-lg {
+                padding-right: 10rem;
+            }
         }
     }
 }

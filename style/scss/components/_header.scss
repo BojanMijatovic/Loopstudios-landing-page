@@ -7,6 +7,9 @@
     height: 100vh;
     position: relative;
     margin-bottom: 8rem;
+    @include media-large {
+        width: auto;
+    }
     // nav
     .header-nav {
         display: flex;
@@ -15,6 +18,10 @@
         margin: 0 auto;
         position: relative;
         width: 90%;
+        // responsive
+        @include media-large {
+            align-items: flex-end;
+        }
         // logo
         .logo-wrapper {
             .logo {
@@ -40,8 +47,28 @@
             left: 100%;
             overflow: hidden;
             transition: transform 0.5s ease;
+            // responsive
+            // media large
+            @include media-large {
+                position: static;
+                background-color: transparent;
+                flex-direction: row;
+                width: 50%;
+                justify-content: center;
+                margin-bottom: 0.5rem;
+            }
+            //  media extra large
+            @include media-extra-lg {
+                width: 40%;
+            }
             //  single link
             .menu-single-item {
+                margin-left: 2rem;
+                // responsive
+                @include media-large {
+                    margin-left: 0rem;
+                    margin-bottom: 0.5rem;
+                }
                 //  item
                 .--item {
                     color: $white;
@@ -54,6 +81,20 @@
                     align-items: center;
                     justify-content: center;
                     margin: 2rem 0 0 3rem;
+                    border: 1px solid transparent;
+                    transition: 0.3s;
+                    // responsive
+                    @include media-large {
+                        font-size: 1.6rem;
+                        margin-top: 2rem;
+                        &:hover {
+                            border-bottom: 1px solid $white;
+                        }
+                    }
+                    //  media extra large
+                    @include media-extra-lg {
+                        font-size: 1.8rem;
+                    }
                 }
             }
         }
@@ -62,6 +103,10 @@
             margin: 3rem 1rem 0 0;
             position: relative;
             z-index: 20;
+            // responsive
+            @include media-large {
+                display: none;
+            }
             span {
                 padding: 0.2rem 1.4rem;
                 background-color: $white;
@@ -78,6 +123,12 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
+            // responsive
+            @include media-large {
+                transform: none;
+                flex-direction: row;
+                align-items: flex-end;
+            }
         }
         //  toggle
         .toggle .line1 {
@@ -90,25 +141,6 @@
         .toggle .line3 {
             transform: rotateZ(-45deg) translateY(-300%);
             background: whitesmoke;
-        }
-    }
-    // hero title
-    .hero {
-        position: absolute;
-        left: 0%;
-        bottom: 35%;
-        border: 1px solid $white;
-        margin: 3rem;
-        .hero-container {
-            // title
-            .--title {
-                color: $white;
-                font-size: 3rem;
-                padding: 1rem;
-                text-transform: uppercase;
-                font-weight: 500;
-                line-height: 1.1;
-            }
         }
     }
 }
