@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +16,6 @@ html {
 ul {
   list-style: none; }
 
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 1200px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 .header {
   background-image: url("../../images/mobile/image-hero.jpg");
   background-position: bottom;
